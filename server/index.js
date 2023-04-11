@@ -8,7 +8,7 @@ const cors = require("cors"); // require cors library
 const pool = require("./db-con");//this is where you connect your sever to the database!
 
 //anytime you want to create a middleware you have to use "app.use()" What Is Middleware? A request handler with access to the application's request-response cycle is known as middleware.
-app.use(cors()); 
+app.use(cors());
 app.use(express.json()); // get data from the client side by using app.use to be able to access the request.body method from express library
 
 app.listen(5001, () => { //make server start and test with a console.log
